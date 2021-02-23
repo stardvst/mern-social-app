@@ -60,7 +60,6 @@ export const likePost = async (req, res) => {
     return res.status(404).send("Not authenticated.");
   }
 
-  console.log(1);
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return res.status(404).send("No post with that ID.");
   }
